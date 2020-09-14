@@ -1,0 +1,59 @@
+@import "src/theme/theme-variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
+
+.login-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('/assets/images/login.jpg') !important;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.ng-invalid.ng-touched:not(form) {
+  border-left: 4px solid theme-color("danger");
+}
+
+@include media-breakpoint-down(xs) {
+  .container {
+    width: 100%;
+  }
+}
+
+.container{
+  text-align: center;
+}
+
+.card{
+  background: rgba(0,0,0,0.5);
+  text-align: unset;
+}
+
+.form-check-label{
+  color: white;
+}
+
+.card-link{
+  color: white;
+}
+
+.btn-primary{
+  background: rgba(185,157,107,1);
+  border-color: #B99D6B;
+  border-radius: #B99D6B;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #B99D6B;
+  border-color: #B99D6B;
+}
